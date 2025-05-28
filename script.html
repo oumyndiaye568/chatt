@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex justify-center items-center h-screen">
+
+
+    
+<div class="container  flex w-[500px] h-[900px]  bg-white shadow  ">
+
+
+    <div class="bare h-[900px]  w-[100px]  flex items-center flex-col justify-center gap-4  bg-[#f5f5dc]">
+
+          <button  id="mess"  class="  border-2 border-black w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
+          <i class="fa-solid fa-message"></i>
+          <span class="text-[13px]">Messages</span>
+        </button>
+
+        <button  id="gr" class="  border-2 border-black w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
+          <i id="btn" class="fa-solid fa-user-group"></i>
+          <span class="text-[13px]">Groupes</span>
+        </button>
+
+        <button class=" border-2 border-black w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
+          <i class="fa-solid fa-arrows-turn-to-dots"></i>
+          <span class="text-[13px]">Discussions</span>
+        </button>
+
+        <button class="border-2 border-black w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
+          <i class="fa-solid fa-box-archive"></i>
+          <span class="text-[13px]">Archives</span>
+        </button>
+
+        <button id="nouveau" class="border-2 border-black w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white ">
+          <i class="fa-solid fa-plus"></i>
+          <span class="text-[13px]">Nouveau</span>
+        </button>
+
+
+
+    </div>
+
+
+
+    <div class="discussion h-[900px] w-[500px] border-2 border-white flex flex-col gap-4 gray-50">
+        <span class="ml-[150px] top-[10px]">Discussions</span>
+        <input class="w-[400px] h-[45px] border-2  border-gray-50 rounded-full bg-white shadow p-4 " type="text" placeholder="recherche">
+        <div id="zone-formulaire" class="w-[90%]  w-[500px]  mt-4"></div>
+         <div id="affichergroupe" class="w-[90%]  w-[500px]  mt-4"></div> 
+
+
+<!--        
+          <div class="w-[300px] h-[150px] border-2 border-gray-50 flex flex-col justify-center items-center   bg-white shadow p-4  gap-4">
+            <span>Nom Du Groupes</span>
+            <input type="text" placeholder="Donne le nom" class="w-[190px] h-[20px] border-2 border-gray-400   bg-white shadow p-4">
+          </div>
+                -->
+
+
+
+         
+
+         
+        </div>
+
+          
+    </div>
+
+        
+
+
+
+
+    <div class="centre  flex flex-col w-[935px] h-[900px] border-2 border-white bg-[#f5f5dc]">
+
+        <div class="icons flex gap-4 justify-between">
+            <div class="border-2 border-black w-[42px] h-[42px] rounded-full bg-black"></div>
+
+           <div class="bouton flex gap-4">
+            <button class="border-2 border-orange-500 w-[42px] h-[42px] rounded-full flex items-center justify-center hover:bg-orange-100">
+                <i class="fa-solid fa-delete-left text-xl text-orange-500"></i>
+              </button>
+              <button class="border-2 border-gray-400 w-[42px] h-[42px] rounded-full flex items-center justify-center hover:bg-gray-100">
+                <i class="fa-solid fa-box-archive text-xl text-gray-400"></i>
+              </button>
+              <button class="border-2 border-black w-[42px] h-[42px] rounded-full flex items-center justify-center hover:bg-gray-200">
+                <i class="fa-solid fa-square text-xl text-black"></i>
+              </button>
+              <button class="border-2 border-red-500 w-[42px] h-[42px] rounded-full flex items-center justify-center hover:bg-red-100">
+                <i class="fa-solid fa-trash text-xl text-red-700"></i>
+              </button>
+           </div>
+        </div>
+
+
+        <div class="chat w-[935px] h-[800px] border-2 border-white"></div>
+
+        <div class="footer w-[935px] h-[100px] bg-white  ">
+
+            <footer class="mt-10 w-full flex sm:flex-row flex-col items-center justify-between gap-4">
+                <input type="text" placeholder="Tapez un message..." class="w-full sm:w-[86%] h-[40px] border px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-green-300 bg-white shadow p-4" />
+                <button class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-3 rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </footer>
+        </div>
+        
+    </div>
+
+   
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+
+</body>
+</html>
+
