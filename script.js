@@ -2,13 +2,13 @@ import { contact, groupes, contactsArchives } from "./tab.js";
 
 // Vérifier si l'utilisateur est connecté
 if (!localStorage.getItem('isLoggedIn')) {
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 // Ajouter une fonction de déconnexion
 window.deconnexion = function() {
     localStorage.removeItem('isLoggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 // Ajouter le bouton de déconnexion dans votre interface
