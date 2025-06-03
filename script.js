@@ -16,7 +16,7 @@ window.deconnexion = function() {
 const barreGauche = document.querySelector('.bare');
 barreGauche.innerHTML += `
     <button onclick="deconnexion()" 
-            class="border-2 border-red-500 w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
+            class="border-2 border-orange-300 w-[80px] h-[70px] flex flex-col items-center justify-center rounded hover:bg-white">
         <i class="fa-solid fa-sign-out-alt text-red-500"></i>
         <span class="text-[13px]">Déconnexion</span>
     </button>
