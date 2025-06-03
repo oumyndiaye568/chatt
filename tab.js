@@ -1,4 +1,4 @@
- export const contact=[
+export const contact=[
     // {
     //     nom:"ndiaye",
     //     prenom:"oumy",
@@ -15,14 +15,12 @@
 ]
 
 
-export const groupes=[
+export const groupes = [
     {
-        nom:"mafia bi"
-    },
-
-
-    {
-        nom:"team bi"
+        nom: "mafia bi",
+        membres: [] // Chaque membre doit avoir la structure {nom: string, isAdmin: boolean}
     }
-]
+];
+
+export const contactsArchives = [];
 
